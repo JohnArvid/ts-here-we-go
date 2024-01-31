@@ -1,0 +1,12 @@
+{
+  "name": "ts-here-we-go",
+  "version": "1.0.0",
+  "description": "trying out ts for the first time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
