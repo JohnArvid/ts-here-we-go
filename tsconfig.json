@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "outFile": "dist/app.js",
+    "sourceMap": true
+  }
+}

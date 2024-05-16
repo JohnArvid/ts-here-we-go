@@ -1,8 +1,9 @@
-const a: string = 'This is a string';
+let a = 'This is a string';
 console.log(a.split(''));
 
 // Type Annotations
-let lang: string = 'TypeScript!';
+let lang = 'TypeScript!';
+
 function greet(lang: string): string {
     return `Hello, ${lang}!`;
 }
@@ -34,7 +35,7 @@ let John: Person = {
 	securitynumber: 555,
 }
 
-let JohnTS: Programmer = {
+const JohnTS: Programmer = {
 	name: 'John',
 	age: 39,
 	email: 'john@codeman.ts',
