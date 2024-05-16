@@ -2,16 +2,29 @@ let a = 'This is a string';
 console.log(a.split(''));
 
 // Type Annotations
-let lang = 'TypeScript!';
+let lang: string = 'TypeScript!';
 
+// Parameter type annotation and return 
 function greet(lang: string): string {
     return `Hello, ${lang}!`;
 }
 
 console.log(greet(lang));
 
+// Typed array
+let arrayOfNUmbers: number[] = [1, 2, 3];
+
+// Tuple
+let arrayOfStringsandNumbers: [string, number] = ["foo", 42];
+
 // Type Inference:
 let message = 'Hello, TypeScript!'; // TypeScript infers the type string
+
+// Union types
+// Initialized with string
+let eitherNumberOrString: number | string = "1";
+// reassigned with number
+eitherNumberOrString = 1; 
 
 // Interfaces are used for specifying the shape of objects
 // They can then be used to specify the type of variables, 
@@ -26,7 +39,7 @@ interface Person {
 // interfaces can extend other interfaces
 interface Programmer extends Person {
 	favouriteLanguage: string;
-	currentStack: Array<string>;
+	currentStack: string[];
 }
 
 let John: Person = {
