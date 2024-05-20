@@ -1,7 +1,3 @@
-import logThis from './mymodule';
-
-logThis('poop');
-
 let a = 'This is a string';
 console.log(a.split(''));
 
