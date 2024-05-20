@@ -1,3 +1,7 @@
+import logThis from './mymodule';
+
+logThis('poop');
+
 let a = 'This is a string';
 console.log(a.split(''));
 
@@ -26,6 +30,9 @@ let eitherNumberOrString: number | string = '1';
 // reassigned with number
 eitherNumberOrString = 1;
 
+// Literal union
+let currentStatus: 'pending' | 'error' | 'success' = 'pending';
+
 // Type alias
 type Size = {
   width: number;
@@ -33,7 +40,7 @@ type Size = {
 };
 
 // Almost all features of an interface are available in type.
-// The key distinction is that a type cannot be re-opened 
+// The key distinction is that a type cannot be re-opened
 // to add new properties vs an interface which is always extendable.
 function calcArea(rect: Size) {
   return rect.height * rect.width;
